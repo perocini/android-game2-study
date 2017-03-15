@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.gpma.jogodaforca.Main"
+    android:orientation="vertical">
+
+    <br.com.gpma.jogodaforca.ForcaView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/fvJogo"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLetra"
+        android:maxLength="1"
+        android:layout_gravity="center_horizontal"
+        android:enabled="false"
+        android:inputType="textNoSuggestions"/>
+    
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btJogar"
+        android:enabled="false"
+        android:text="Jogar"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btPlay"
+        android:enabled="true"
+        android:text="Play"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
